@@ -14,7 +14,10 @@ class Search extends Component {
         this.setState(
             () => ({ type: event.target.value }),
             () => {
-                this.props.searchMovies(this.state.search, this.state.type);
+                this.props.searchMovies(
+                    this.state.search.length ? this.state.search : 'matrix',
+                    this.state.type
+                );
             }
         );
     };

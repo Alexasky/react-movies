@@ -15,7 +15,6 @@ function Movie(props) {
                 ) : (
                     <img src={poster} />
                 )}
-                <span className='card-title'>{title}</span>
             </div>
             <div className='card-content'>
                 <span>{year}</span>
